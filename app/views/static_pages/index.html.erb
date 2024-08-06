@@ -1,5 +1,13 @@
 <h1>Hello World</h1>
 
+<%= form_with url: static_pages_path, method: :get do |f|%>
+
+  <div><%= f.label :flickr_id, "Enter Your Flicker ID and See your images!" %>
+    <%= f.text_field :flickr_id %></div>
+
+  <%= f.submit 'See Now' %>
+<% end %>
+
 <% @list.each do |photo| %>
   <div>
     <%= image_tag("
