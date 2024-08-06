@@ -1,0 +1,9 @@
+<h1>Hello World</h1>
+
+<% @list.each do |photo| %>
+  <div>
+    <%= image_tag("
+https://live.staticflickr.com/#{photo.server}/#{photo.id}_#{photo.secret}_w.jpg") %>
+  </div>
+<% end %>
+
