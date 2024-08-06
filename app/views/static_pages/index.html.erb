@@ -1,5 +1,7 @@
 <h1>Hello World</h1>
 
+<%= flash[:notice] %>
+
 <%= form_with url: static_pages_path, method: :get do |f|%>
 
   <div><%= f.label :flickr_id, "Enter Your Flicker ID and See your images!" %>
