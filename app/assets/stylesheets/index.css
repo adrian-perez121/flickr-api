@@ -1,1 +1,47 @@
+.id-field{
+  border: none;
+  border-radius: 5px;
+  background: rgba(46, 47, 48, 0.19);
+  appearance: none;
+}
+
+.id-field:focus, .id-field:hover{
+  outline: none;
+  appearance: none;
+  background: rgba(46, 47, 48, 0.30);
+}
+
+.id-submit {
+  appearance: none;
+  outline: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 3px 3px 2px 0.5px rgba(0, 0, 0, 0.6);
+  transition: 0.1s;
+}
+
+.id-submit:active {
+  box-shadow: none;
+  transition: 0.1s;
+}
+
+.grid {
+  display: grid;
+  width: 100%;
+  height: 100%;
+
+  grid-auto-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+
+  align-items: center;
+  justify-items: center;
+
+  gap: 15px;
+}
+
+.grid > img {
+  box-shadow: 0 5px 10px 7px rgba(94, 225, 225, 0.85);
+}
+
 

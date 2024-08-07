@@ -6,15 +6,15 @@
 <%= form_with url: static_pages_path, method: :get do |f|%>
 
   <div><%= f.label :flickr_id, "Enter Your Flicker ID and See your images!" %>
-    <%= f.text_field :flickr_id %></div>
+    <%= f.text_field :flickr_id, class: 'id-field' %></div>
 
-  <%= f.submit 'See Now' %>
+  <%= f.submit 'See Now', class: 'id-submit' %>
 <% end %>
 
-<% @list.each do |photo| %>
-  <div>
-    <%= image_tag("
+<div class="grid">
+  <% @list.each do |photo| %>
+      <%= image_tag("
 https://live.staticflickr.com/#{photo.server}/#{photo.id}_#{photo.secret}_w.jpg") %>
-  </div>
-<% end %>
+  <% end %>
+</div>
 
